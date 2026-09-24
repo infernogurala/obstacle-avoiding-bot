@@ -29,7 +29,7 @@ void setup() {
   // Set all motor control pins as outputs
   pinMode(enableA, OUTPUT);
   pinMode(motorA_Pin1, OUTPUT);
-  pinMode(motorA_PmotorA_Pin2, OUTPUT);
+  pinMode(motorA_Pin2, OUTPUT);
 
   pinMode(enableB, OUTPUT);
   pinMode(motorB_Pin1, OUTPUT);

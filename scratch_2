@@ -9,15 +9,15 @@ float distFront, distLeft, distRight;
 const int speed = 200;
 const int threshold = 20;
 
-// Motor A pins
-const int enableA = 6; // MUST BE CONNECTED TO PWM, controls the speed
-const int motorA_Pin1 = 7;
-const int motorA_Pin2 = 2;
+//Right motor
+int enableA=5;
+int motorA_Pin1=7;
+int motorA_Pin2=8;
 
-// Motor B pins
-const int enableB = 5; // MUST BE CONNECTED TO PWM
-const int motorB_Pin1 = 13;
-const int motorB_Pin2 = 12;
+//Left motor
+int enableB=6;
+int motorB_Pin1=9;
+int motorB_Pin2=10;
 
 // CUSTIOM FUNCTIONS
  // angle forward the servo to theAngle
@@ -98,7 +98,7 @@ void turnRight() {
 
 
 void setup() {
-  myServo.attach(8);
+  myServo.attach(11);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
